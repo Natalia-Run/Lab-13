@@ -1,17 +1,22 @@
-﻿#include <iostream>
-#include <ctime>
-using namespace std;
+#include <iostream> // подключаем библиотеку, необходимой для ввода-вывода на консоль 
+#include <ctime> // подключаем библиотеку для возвращения указателя на строку следующего формата
+
+using namespace std; // задаём пространство имён, определяющая область, на которую приходятся действия оператора или функции 
+
 int main()
 {
     int i, n;
     time_t t;
-    setlocale(LC_ALL, "Russian");
+
+    setlocale(LC_ALL, "Russian"); // русский текст в консоли
+
     time(&t);
-    srand((unsigned int)t);
+    srand((unsigned int)t); // функция, позволяющая выводить разные генерируемые числа 
+
     cout << "Введите количество бочонков, которое будет вытащено: ";
     cin >> n;
 
-    for (i = 1; i <= n; i++)
+    for (i = 1; i <= n; i++) // функция, позволяющая вывести до 100 рандомных чисел
     {
         cout << rand() % 100 + 1 << endl;
     }
