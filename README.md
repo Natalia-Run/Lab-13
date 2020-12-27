@@ -5,7 +5,7 @@
 
 ## Скриншот консоли
 
-![image](https://wmpics.pics/di-08IE.png)
+![image](https://wmpics.pics/di-NACV.png)
 
 ## Описание
 
